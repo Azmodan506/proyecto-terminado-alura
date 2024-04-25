@@ -1,0 +1,407 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+.all{
+    width: 100vw;
+}
+/* MENU PRONTO */
+section.menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 30px;
+}
+
+section header {
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+    margin: 0px 150px;
+}
+
+section header img {
+    box-shadow: none;
+    margin-right: 16px;
+}
+
+header.cabecalho img {
+    width: 24px;
+    height: 24px;
+}
+
+.menu-navegacao ul {
+    display: flex;
+    justify-content: space-around;
+    padding-right: 10px;
+    margin-right: 150px;
+    gap: 32px;
+}
+
+.menu__list__item__contato {
+    padding: 0px, 0px, 10px, 10px;
+    display: none;
+}
+
+/*Sessão Title PRONTO*/
+section.title {
+    margin: 30px 150px 30px 150px;
+}
+
+.title__div {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    
+}
+
+.title__profile{
+    width: 50%;
+    height: 50vh;
+    border-radius: 50%;
+    flex-grow: 1;
+}
+
+.title__container .title__bio {
+    display: flex;
+    flex-direction: column;
+}
+
+.title__bio {
+    padding: 10px 0px;
+    gap: 10px;
+    font-size: 52px;
+    line-height: 61.05px;
+    font-weight: 700;
+
+}
+
+.title__subsection {
+    margin-top: 30px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 25.83px;
+}
+
+.title__network {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-top: 30px;
+}
+
+/*Sessão About PRONTO*/
+
+section.about {
+    width: 100%;
+    background-color: var(--cor-destaque)
+}
+
+.about__container {
+    margin: 0 150px;
+    padding: 64px 385px 64px 0px;
+    gap: 10px;
+    line-height: 22px;
+}
+
+.about__title {
+    font-weight: 700;
+    font-size: 32px;
+}
+
+/* SKILLS PRONTO */
+section.skills {
+    width: 100%;
+    padding: 8px;
+    border: 25px;
+}
+
+.skills__title {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.skills__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px 150px;
+    gap: 20px;
+}
+
+.skills__box {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--cor-branca);
+    width: 50vw;
+    height: 15vh;
+    border-radius: 8px;
+}
+
+
+/*Sessão Hobbies PRONTO*/
+
+section.hobbies {
+    width: 100%;
+    padding: 8px;
+    border: 25px;
+}
+
+.hobbies__title {
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    margin: 30px;
+
+}
+
+.hobbies__line {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px 150px;
+    gap: 20px;
+}
+
+.hobbies__box {
+    display: flex;
+    align-items: flex-end;
+    background-color: var(--cor-branca);
+    width: 50vw;
+    height: 15vh;
+    border-radius: 8px;
+}
+
+/* Experiência Acadêmica PRONTO*/
+
+section.academic{
+    background-color: var(--cor-destaque);
+    width: 100%;
+    height: 581px;
+
+}
+.academic__title {
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    font-size: 32px;
+    font-weight: 700;
+}
+.academic__courses{
+    display: flex;
+    justify-content: space-evenly;  
+}
+.academic__courses__box{
+    background-color: var(--cor-branca);
+    width: 20%;
+    border-radius: 10px;
+}
+.academic__courses__box img{
+    width: 100%;
+}
+.academic__courses__list{
+    display: flex;
+    flex-direction: column;
+    margin-top: 35px;
+    align-items: center;
+}
+
+.academic__courses__item__title{
+    margin-top: 70px;
+    font-weight: 700;
+    font-size: 22px;
+}
+.academic__courses__item__subtitle{
+    margin-top: 10px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+/* experiência PRONTO*/
+
+section.experience {
+    width: 100%;
+}
+
+.experience__section__title{
+    text-align: center;
+    padding-block: 32px;
+    font-size: 32px;
+    font-weight: 700;
+
+}
+.experiencie__box{
+    display: flex;
+    margin: 0px 150px;
+    padding-bottom: 50px;
+    gap: 20px;
+}
+
+.experiencie__box:nth-child(odd) {
+    flex-direction: row-reverse;
+}
+.experience__img{
+    width: 50%;
+    /* width: 45vw;
+    height: 45vh; */
+}
+.experience__info{
+    align-self: center;
+}
+button{
+    border: none;
+    padding: 16px;
+    cursor: pointer;
+}
+.experiencia__botao--repo{
+    color: var(--cor-de-botao-secundario-hover-mobile);
+    border: 1px solid var(--cor-de-botao-secundario-hover-mobile);
+}
+.experiencia__botao--repo:hover {
+    cursor: pointer;
+    background-color: var(--cor-de-botao-secundario-hover-desktop);
+}
+.experiencia__botao--demo{
+    color: var(--cor-branca);
+    background-color: var(--cor-de-botao-secundario-hover-mobile);
+}
+
+.experiencia__botao--demo:hover {
+    cursor: pointer;
+    background-color: var(--cor-de-botao-primario-hover-mobile);
+}
+/*Contato*/
+
+section.formcontato {
+    background-color: var(--cor-destaque);
+    width: 100%;
+}
+.formcontato__contato{
+    display: flex;
+    justify-content: space-around;
+    padding: 100px 150px;
+    gap: 20px;
+}
+.formcontato__img{
+    width: 100%;
+}
+.formcontato__text{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+}
+.formcontato__input{
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.formcontato__textarea{
+    margin: 10px 0px;
+    border-radius: 5px;
+}
+.formcontato__botao {
+    width: 165px;
+    height: 51px;
+    padding: 16px;
+    background-color: var(--cor-de-botao-secundario-hover-mobile);
+    color: var(--cor-branca);
+    border-radius: 5px;
+}
+
+.formcontato__botao:hover {
+    cursor: pointer;
+    background-color: var(--cor-de-botao-primario-hover-mobile);
+}
+
+
+
+/*footeer PRONTO*/
+
+section.footer {
+    width: 100%;
+    /* margin: 0px 150px; */
+
+}
+.footer__rodape{
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+/* Chegou a hora de se desafiar com a responsividade, 
+utilize como referência os breakpoints @media abaixo*/
+
+/*Tablet*/
+/* @media screen and (min-width: 768px){
+
+} */
+
+    /* Menu */
+
+    /*title*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Experiências acadêmicas*/
+
+    /*Expeirência profissional*/
+
+
+
+/*Mobile*/
+
+
+    /*Menu*/
+
+    /*Titulo*/
+
+    /*Sessão sobre*/
+
+    /*Skills*/
+
+    /*Hobbies*/
+
+    /*Formação Acadêmica*/
+
+    /*Experiência Profissional*/
+
+    /*Contato*/
+
+    /*Footer*/
